@@ -1,6 +1,4 @@
-# Example de projet statique
-
-Cette documentation explique comment automatiser les taches répétitives d'un projet pour vous laisser vous concentrer sur votre travail.
+# Mon beau projet
 
 
 ## Préparer l'environnement
@@ -34,7 +32,7 @@ Pour mettre votre environnement à jour, utilisez cette commande :
 $ bundle install
 ```
 
-**NOTE : ** _Si vous ajoutez des Gems pour automatisé le projet, vous devez mettre à  jour les fichiers `Gemfiles` et `Gemfiles.lock` pour que les autres developpeurs puissent mettre leur environnement à jour proprement._
+**NOTE :** _Si vous ajoutez des Gems pour automatisé le projet, vous devez mettre à  jour les fichiers `Gemfiles` et `Gemfiles.lock` pour que les autres developpeurs puissent mettre leur environnement à jour proprement._
 
 
 ### Environnement NodeJS
@@ -64,6 +62,18 @@ $ npm install
 
 _La façon la plus simple de mettre ce fichier à jour et d'ajouter l'option de commande `--save-dev` lorsque vous utilisez `npm intall` pour ajouter un module._
 
+
+### Environnement Bower
+
+Ce projet utilise Bower. Il n'est pas nécessaire de faire un install de bower car ce dernier sera inclu lors de l'installation de NodeJS.
+
+Pour installer un _package_ :
+
+```bash
+$ bower install <package>
+```
+
+Pour rechercher un _package_ : http://bower.io/search/
 
 ## Travailler sur le projet
 
