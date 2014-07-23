@@ -1,0 +1,115 @@
+/** --- @section PLUGINS/#GRID --- */
+
+#grid
+{
+	overflow: hidden;
+	position: absolute;
+	left:  0;
+	right: 0;
+	top:   0;
+	
+	// Desktop
+	@include mq(L)
+	{
+		@include container($columns-M);
+	}
+
+	// Wide screens
+	@include mq($from: XL)
+	{
+		@include container($columns-L);
+	}
+
+	// Tablet
+	@include mq($from: M, $to: L)
+	{
+		@include container($columns-S);
+	}
+
+	// Mobile
+	@include mq($to: M)
+	{
+		width: auto;
+	}
+	
+	.vert-container
+	{
+		left:  outline-unit($grid-padding);
+		right: outline-unit($grid-padding);
+	}
+	.vert
+	{
+		width: outline-unit($column-width);
+		margin-left: outline-unit($gutter-width);
+		background-color: $grid-background-column-color;
+		margin-right: 0!important;
+		
+		&.first-child
+		{
+			margin-left: 0;
+		}
+		&:nth-child(even)
+		{
+			background-color: darken($grid-background-column-color,15);
+		}
+
+		// Mobile
+		@include mq($to: M)
+		{
+			&.first-child
+			{
+				width: 100%;
+			}
+		}
+	}
+	.horiz
+	{
+		@include height(1,$fs);
+		@include background-image(linear-gradient(transparent 95%, $grid-background-column-color 95%)); // on passe par un dégradé pour éviter de devoir calculer avec les hauteurs de bordures
+	}
+	&.grid-1
+	{
+		.vert
+		{
+			background-color: transparent; // pas de grille verticale affichée
+		}
+	}
+	&.grid-2
+	{
+		.horiz
+		{
+			background-image: none; // pas de grille horizontale affichée
+		}
+	}
+}
+
+
+/**
+ * Display the current media query while working with #grid
+ */
+body
+{
+    &:before
+    {
+        position: fixed;
+        background: #fff;
+        padding: 0 10px;
+        border: 5px solid #000;
+        border-top: none;
+        content: "L (default)";
+        z-index: 30000;
+        
+        @include mq($from: XL)
+        {
+   			content: "XL";
+    	}
+	    @include mq($from: M, $to: L)
+	    {
+	    	content: "M";
+	    }
+	    @include mq($to: M)
+	    {
+	    	content: "S";
+	    }
+    }
+}

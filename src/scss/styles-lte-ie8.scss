@@ -1,0 +1,11 @@
+/** --- @section IE<9 CSS --- */
+
+$lte-ie8: true;
+$mq-responsive: false;
+
+@import "partials/_config"; // Necessary to have the proper $legacy-support-for-ie definition
+
+@import "partials/libs";
+@import "partials/core";
+@import "partials/plugins";
+@import "partials/project";

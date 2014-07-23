@@ -1,0 +1,482 @@
+---
+title: Index du projet
+layout: indexed.hbs
+---
+
+<h1>Canal Plus Overseas : A+</h1>
+
+<h2>Fonts</h2>
+
+<table>
+    <thead>
+        <tr>
+          <th>Tests @font-face</th>
+          <th><abbr title="Internet Explorer">IE</abbr> 8</th>
+          <th><abbr title="Internet Explorer">IE</abbr> 9</th>
+          <th><abbr title="Internet Explorer">IE</abbr> 10</th>
+          <th>Chrome XP</th>
+          <th>Chrome MacOS</th>
+          <th><abbr title="Firefox">Fx</abbr> XP</th>
+          <th><abbr title="Firefox">Fx</abbr> MacOS</th>
+          <th>iOS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#">Ma belle font-face</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Pages</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Maquettes</th>
+            <th>Validation <abbr>HTML</abbr></th>
+            <th><abbr title="Internet Explorer">IE</abbr> 8</th>
+            <th><abbr title="Internet Explorer">IE</abbr> 9</th>
+            <th><abbr title="Internet Explorer">IE</abbr> 10</th>
+            <th>Opera</th>
+            <th>Chrome</th>
+            <th>Safari</th>
+            <th><abbr title="Firefox">Fx</abbr></th>
+            <th>Lynx [^1]</th>
+            <th>Impression</th>
+            <th>Mobile</th>
+            <th>Tablette</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#eachfile '/src/tpl/pages'}}
+        <tr>
+            <td><a href="pages/{{subname}}.html">{{name}}</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        {{/eachfile}}
+    </tbody>
+</table>
+
+<p>[1]: Hors erreurs de validation liées aux recommandations SEO.</p>
+
+<h2 id="bps">Respect des bonnes pratiques <sup id="fnref:2"><a href="#fn:2">2</a></sup></h2>
+
+<p>Les bonnes pratiques ne sont pas forcément toutes à valider. Elles servent plutôt à donner une vision globale sur le travail et éventuellement à dégager des axes d’améliorations.
+Il est par contre intéressant de savoir justifier chaque bonne pratique non-validée dans le cadre du projet.</p>
+
+<h3>Niveau 1</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Thématique</th>
+            <th>Description                                                          &nbsp;</th>
+            <th>Fiche</th>
+            <th>Validité</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alternatives</td>
+            <td>Chaque image est dotée d’une alternative textuelle appropriée</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/500/"><abbr title="Bonne Pratique">BP</abbr> 1</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le code source de chaque page débute par un déclaration de type de document</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/501/"><abbr title="Bonne Pratique">BP</abbr> 2</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le contenu de chaque page est organisé selon une structure de titres et sous-titres hiérarchisée</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/502/"><abbr title="Bonne Pratique">BP</abbr> 3</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le site n’impose pas de redirection ou de rafraichissement automatique côté client</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/503/"><abbr title="Bonne Pratique">BP</abbr> 4</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Les styles ne sont pas utilisés pour générer du contenu</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/504/"><abbr title="Bonne Pratique">BP</abbr> 5</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fichiers et multimédia</td>
+            <td>Les sons et vidéos sont déclenchés par l’utilisateur.</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/530/"><abbr title="Bonne Pratique">BP</abbr> 31</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fichiers et multimédia</td>
+            <td>Les animations, sons et clignotements peuvent être mis en pause</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/533/"><abbr title="Bonne Pratique">BP</abbr> 34</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Formulaires</td>
+            <td>Chaque champ de formulaire est associé dans le code source à une étiquette qui lui est propre</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/534/"><abbr title="Bonne Pratique">BP</abbr> 35</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Formulaires</td>
+            <td>L’étiquette de chaque champ de formulaire indique si la saisie est obligatoire</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/538/"><abbr title="Bonne Pratique">BP</abbr> 39</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hyperliens</td>
+            <td>Chaque lien est doté d’un intitulé dans le code source</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/540/"><abbr title="Bonne Pratique">BP</abbr> 41</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hyperliens</td>
+            <td>Le soulignement est réservé aux hyperliens.</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/541/"><abbr title="Bonne Pratique">BP</abbr> 42</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hyperliens</td>
+            <td>Les hyperliens sont visuellement différenciés du reste du contenu.</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/542/"><abbr title="Bonne Pratique">BP</abbr> 43</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Internationalisation</td>
+            <td>Le code source de chaque page indique la langue principale du contenu</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/548/"><abbr title="Bonne Pratique">BP</abbr> 49</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Navigation</td>
+            <td>Le site n’emploie pas la technique des jeux de cadres</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/551/"><abbr title="Bonne Pratique">BP</abbr> 52</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Navigation</td>
+            <td>Le focus clavier n’est ni supprimé ni masqué</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/557/"><abbr title="Bonne Pratique">BP</abbr> 58</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Serveur et Performances</td>
+            <td>Les entêtes envoyés par le serveur contiennent les informations relatives au jeu de caractères employé</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/574/"><abbr title="Bonne Pratique">BP</abbr> 75</a></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Niveau 2</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Thématique</th>
+            <th>Description                                                          &nbsp;</th>
+            <th>Fiche</th>
+            <th>Validité</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alternatives</td>
+            <td>Les objets inclus sont dotés d’une alternative appropriée</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/585/"><abbr title="Bonne Pratique">BP</abbr> 86</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le contenu ne comporte pas de tableaux imbriqués</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/587/"><abbr title="Bonne Pratique">BP</abbr> 88</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le codage de caractères utilisé est UTF-8</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/588/"><abbr title="Bonne Pratique">BP</abbr> 89</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Les mots ne comportent ni espaces ni balisage interne.</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/590/"><abbr title="Bonne Pratique">BP</abbr> 91</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Les éléments visuellement présentés sous forme de liste sont balisés de façon appropriée</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/596/"><abbr title="Bonne Pratique">BP</abbr> 97</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le code source de chaque page contient une metadonnée qui définit le jeu de caractères</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/599/"><abbr title="Bonne Pratique">BP</abbr> 100</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fichiers et multimédia</td>
+            <td>Les vignettes ne sont pas des images de taille supérieure redimensionnées côté client.</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/613/"><abbr title="Bonne Pratique">BP</abbr> 114</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hyperliens</td>
+            <td>Le survol ou l’activation des hyperliens ne modifie pas la mise en page</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/620/"><abbr title="Bonne Pratique">BP</abbr> 121</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hyperliens</td>
+            <td>Le site n’applique pas le même style aux liens visités et non visités</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/623/"><abbr title="Bonne Pratique">BP</abbr> 124</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Identification</td>
+            <td>Le code source de chaque page contient une metadonnée qui en décrit le contenu</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/625/"><abbr title="Bonne Pratique">BP</abbr> 126</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Identification</td>
+            <td>Le code source des pages contient un appel valide à un icône de favori</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/627/"><abbr title="Bonne Pratique">BP</abbr> 128</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Navigation</td>
+            <td>Les icônes de navigation sont accompagnées d’une légende explicite</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/630/"><abbr title="Bonne Pratique">BP</abbr> 131</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Navigation</td>
+            <td>Chaque page contient des liens d’accès rapide placés au début du code source</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/631/"><abbr title="Bonne Pratique">BP</abbr> 132</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Navigation</td>
+            <td>La navigation au clavier s’effectue dans un ordre prévisible</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/633/"><abbr title="Bonne Pratique">BP</abbr> 134</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Navigation</td>
+            <td>Les nouvelles fenêtres dimensionnées et les fenêtres modales sont dotées d’un bouton de fermeture</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/634/"><abbr title="Bonne Pratique">BP</abbr> 135</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Navigation</td>
+            <td>Les blocs de navigation de même nature sont affichés au même emplacement sur toutes les pages</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/635/"><abbr title="Bonne Pratique">BP</abbr> 136</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Navigation</td>
+            <td>Un contenu qui doit être restitué dans un lecteur d’écran ne lui est pas dissimulé</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/638/"><abbr title="Bonne Pratique">BP</abbr> 139</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Présentation</td>
+            <td>Le site propose au moins une feuille de style dédiée à l’impression</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/639/"><abbr title="Bonne Pratique">BP</abbr> 140</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Présentation</td>
+            <td>La taille des polices destinées à l’affichage écran est exprimée en taille variable</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/641/"><abbr title="Bonne Pratique">BP</abbr> 142</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Tableaux</td>
+            <td>Les titres des tableaux de données sont renseignés</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/646/"><abbr title="Bonne Pratique">BP</abbr> 147</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Tableaux</td>
+            <td>La linéarisation des tableaux utilisés pour la mise en page ne nuit pas à la compréhension des contenus</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/651/"><abbr title="Bonne Pratique">BP</abbr> 152</a></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Niveau 3</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Thématique</th>
+            <th>Description                                                          &nbsp;</th>
+            <th>Fiche</th>
+            <th>Validité</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Code</td>
+            <td>Les styles en ligne sont utilisés de manière appropriée</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/655/"><abbr title="Bonne Pratique">BP</abbr> 156</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le code source de chaque page ne comporte pas d’erreur</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/656/"><abbr title="Bonne Pratique">BP</abbr> 157</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le code source de chaque page ne contient pas d’éléments ou d’attributs de présentation</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/657/"><abbr title="Bonne Pratique">BP</abbr> 158</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Les dimensions réelles des images sont indiquées dans le code source.</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/658/"><abbr title="Bonne Pratique">BP</abbr> 159</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>L’accès aux contenus et services est possible sans le support des scripts</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/660/"><abbr title="Bonne Pratique">BP</abbr> 161</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le code source des pages est valide au regard de la grammaire choisie</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/661/"><abbr title="Bonne Pratique">BP</abbr> 162</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td>Le code source de chaque page ne contient pas d’éléments détournés à des fins de présentation</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/663/"><abbr title="Bonne Pratique">BP</abbr> 164</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Contenus</td>
+            <td>Une metadonnée indique l’URL de référence des contenus proposés sous plusieurs formes</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/669/"><abbr title="Bonne Pratique">BP</abbr> 170</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fichiers et multimédia</td>
+            <td>Le déroulement des animations ne bloque pas la navigation ou l’accès aux contenus</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/676/"><abbr title="Bonne Pratique">BP</abbr> 177</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Formulaires</td>
+            <td>Les champs de formulaire qui nécessitent une information commune sont regroupés sous une même légende</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/682/"><abbr title="Bonne Pratique">BP</abbr> 183</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Formulaires</td>
+            <td>Les listes d’options de formulaires sont présentées dans un ordre identifiable</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/684/"><abbr title="Bonne Pratique">BP</abbr> 185</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Internationalisation</td>
+            <td>Le sens de lecture du contenu est indiqué lorsqu’il diffère de celui par défaut</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/695/"><abbr title="Bonne Pratique">BP</abbr> 196</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Présentation</td>
+            <td>Le site propose une ou plusieurs feuilles de style dédiées aux terminaux mobiles</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/705/"><abbr title="Bonne Pratique">BP</abbr> 206</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Présentation</td>
+            <td>Les phrases ou ensembles de mots mis en images ne sont pas divisés</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/706/"><abbr title="Bonne Pratique">BP</abbr> 207</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Présentation</td>
+            <td>Le contenu textuel reste lisible avec une taille de caractère augmentée d’un facteur 2</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/708/"><abbr title="Bonne Pratique">BP</abbr> 209</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Présentation</td>
+            <td>Les mises en majuscules à des fins décoratives sont effectuées à l’aide des styles</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/709/"><abbr title="Bonne Pratique">BP</abbr> 210</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Serveur et Performances</td>
+            <td>Les appels aux scripts sont placés après le contenu</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/712/"><abbr title="Bonne Pratique">BP</abbr> 213</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Serveur et Performances</td>
+            <td>Les fonctions de scripts sont placés dans des fichiers externes.</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/714/"><abbr title="Bonne Pratique">BP</abbr> 215</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Serveur et Performances</td>
+            <td>Les scripts sont minifiés</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/715/"><abbr title="Bonne Pratique">BP</abbr> 216</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Serveur et Performances</td>
+            <td>Les informations de style sont minifiées</td>
+            <td><a href="http://checklists.opquast.com/11/criteria/716/"><abbr title="Bonne Pratique">BP</abbr> 217</a></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<ol id="footnotes">
+    <li id="fn:1">
+        <p>L’affichage Lynx est proche de la restitution faite par un lecteur d’écran ou de ce qui est perçu par un moteur de recherche.&nbsp;<a href="#fnref:1">↩</a></p>
+    </li>
+    <li id="fn:2">
+        <p>Extrait des <a href="http://checklists.opquast.com/opquastv2?q=int%C3%A9gration+xhtml%2Fcss">bonnes pratiques <abbr>OPQUAST</abbr> pour l’intégration <abbr>XHTML</abbr>/<abbr>CSS</abbr></a>&nbsp;<a href="#fnref:2">↩</a></p>
+    </li>
+</ol>
+
